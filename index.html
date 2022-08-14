@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío de Eventos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li">Home</li>
+                <li class="nav__li">Stock</li>
+                <li class="nav__li">Servicios</li>
+                <li class="nav__li">Nosotros</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="stock">
+        <section class="container">
+            <h1 class="stock__title">Carga de Animales</h1>
+
+            <div class="container-form">
+                <form id="idForm" class="form">
+                    <div class="form__box">
+                        <label for="especie">Especie</label>
+                        <input type="text" class="form__input" id="especie">
+                    </div>
+                    <div class="form__box">
+                        <label for="sexo">Sexo</label>
+                        <input type="text" class="form__input" id="sexo">
+                    </div>
+                    <div class="form__box">
+                        <label for="peso">Peso</label>
+                        <input type="text" class="form__input" id="peso">
+                    </div>
+                    <div class="form__box">
+                        <label for="edad">Edad</label>
+                        <input type="text" class="form__input" id="edad">
+                    </div>
+                    <button class="form__button" type="submit">Cargar Datos</button>
+                    <button class="form__button" id="btnMostrar">Mostrar Datos </button>
+                </form>
+            </div>
+            <div class="listado" >
+                <h2 class="listado__title"> Datos guardados</h2>
+                <table class="listado__table">
+                    <thead class="listado__thead">
+                        <tr>
+                            <th>ID</th>
+                            <th>Especie</th>
+                            <th>Sexo</th>
+                            <th>Peso</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listado" class="listado__tbody">
+                        <!-- inner HTML btnMostrar -->
+                    </tbody>
+                    
+                </table>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

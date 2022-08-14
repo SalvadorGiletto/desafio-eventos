@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/*Header*/
+.header {
+    max-width: 100vw;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+/*Nav*/
+.nav {
+    height: 100%;
+}
+.nav__ul{
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 7rem;
+}
+.nav__li{
+    list-style-type: none;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/*Section STOCK*/
+.stock{
+    background-color: rgb(207, 248, 207);
+    height: 3000px;
+
+}
+.container {
+    max-width: 90vw;
+    margin: 0 auto; 
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 3rem;
+}
+
+.stock__title{
+    font-size: 3rem;
+}
+
+/*estilos del Form*/
+.form {
+    font-size: 1.3rem;
+}
+.form__box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form__input{
+    height: 30px;
+    padding-left: 5px;
+    font-size: 1.1rem;
+    color: rgb(160, 160, 160);
+}
+.form__button{
+    background-color: #f2f2f2;
+    margin-top: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 3px black ;
+    border-radius: 5px;
+
+}
+.form__button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/*Estilos de la tabla de mostrar datos*/
+.listado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listado__title{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.listado__table{
+    border: 2px solid black;
+    width: 500px;
+}
+.listado__thead{
+    font-size: 1.3rem;
+}
+.listado__tbody{
+    text-align: center;
+}
+
+tr, th ,td {
+    border: 3px solid black;
+}
+
+
+
